@@ -2,6 +2,7 @@ require_relative './person_class_obj'
 
 class Student < Person
   attr_reader :classroom
+  attr_writer :parent_permission
 
   def play_hooky
     "¯\(ツ)/¯"
