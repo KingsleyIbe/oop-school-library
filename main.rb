@@ -1,3 +1,5 @@
+#!/usr/bin/env ruby
+
 # Imports
 require './book'
 require './student_class_obj'
