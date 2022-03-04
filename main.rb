@@ -1,5 +1,4 @@
 #!/usr/bin/env ruby
-require 'pry'
 
 # Imports
 require './book'
@@ -23,7 +22,7 @@ def add_book(book)
 end
 
 # Method to add new book record
-def add_person(person)
+def add_persons(person)
   @person_arr.push(person)
   @person_arr
 end
