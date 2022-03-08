@@ -8,15 +8,12 @@
 ## Built With
 
 - Ruby
-
-
 ## Getting Started
 
 To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
 - A text editor(preferably Visual Studio Code)
-
 ### Install
 - Ruby
 
@@ -57,4 +54,14 @@ Contributions, issues, and feature requests are welcome!
 
 Feel free to check the [issues page](https://github.com/KingsleyIbe/oop-school-library/issues).
 
+## Acknowledgments
+- Hat tip to anyone whose code was used
+- Inspiration
+- etc
+
 ## Show your support
+Give a ⭐️ if you like this project!
+
+## 📝 License
+
+This project is [MIT](./MIT.md) licensed.

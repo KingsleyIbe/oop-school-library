@@ -1,5 +1,5 @@
 #!/usr/bin/env ruby
-require 'pry'
+
 # Imports
 require './book'
 require './student_class_obj'
@@ -10,7 +10,7 @@ require './rental'
 puts "---------------------------------\n
  Welcome to OOP School Library App!\n
  ------------------------------"
- binding.pry
+
 # State Helpers
 @book_arr = []
 @person_arr = []
