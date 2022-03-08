@@ -1,15 +1,23 @@
 #!/usr/bin/env ruby
 
 # Imports
-require_relative './person_class_obj.rb'
-require_relative './student_class_obj.rb'
-require_relative './teacher_class_obj.rb'
-require_relative './book_main.rb'
-require_relative './rental_main.rb'
-require_relative './person_main.rb'
-require_relative './book.rb'
-require_relative './classroom.rb'
-require_relative './rental.rb'
+require_relative './person_class_obj'
+require_relative './student_class_obj'
+require_relative './teacher_class_obj'
+require_relative './book_main'
+require_relative './rental_main'
+require_relative './person_main'
+require_relative './book'
+require_relative './classroom'
+require_relative './rental'
+
+@default_person = PersonMain.new
+@default_book = BookMain.new
+@default_rental = RentalMain.new
+
+@books = []
+@people = []
+@rentals = []
 
 # Welcome note
 puts "---------------------------------\n
@@ -28,9 +36,16 @@ def menu
 end
 
 # Menu Selections for user entries
-@menu_hash = { 1 => method(:list_all_books), 2 => method(:list_all_people), 3 => method(:create_a_person),
-               4 => method(:create_a_book), 5 => method(:create_a_rental),
-               6 => method(:list_rentals_for_id), 7 => method(:exit) }
+@menu_hash = {
+  1 => method(:list_all_books),
+  2 => method(:list_all_people),
+  3 => method(:create_a_person),
+  4 => method(:create_a_book),
+  5 => method(:create_a_rental),
+  6 => method(:list_rentals_for_id),
+  7 => method(:exit)
+}
+
 def init()
   menu
   selection = gets.chomp.to_i

@@ -1,5 +1,5 @@
-require_relative './rental.rb'
-require_relative './success.rb'
+require_relative './rental'
+require_relative './success'
 
 class RentalMain
   # Method to create a new rental

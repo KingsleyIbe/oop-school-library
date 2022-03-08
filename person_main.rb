@@ -1,6 +1,6 @@
 require_relative './student_class_obj'
 require_relative './teacher_class_obj'
-require_relative './success.rb'
+require_relative './success'
 
 class PersonMain
   # Method to add new book record
@@ -63,9 +63,9 @@ class PersonMain
     init
   end
 
-    # Method to list all persons' record
-    def list_all_people
-      @person_arr.map { |person| puts "[#{person.type}] Name: #{person.name}, ID: #{person.id}, Age: #{person.age}" }
-      init
-    end
+  # Method to list all persons' record
+  def list_all_people
+    @person_arr.map { |person| puts "[#{person.type}] Name: #{person.name}, ID: #{person.id}, Age: #{person.age}" }
+    init
+  end
 end

@@ -1,5 +1,5 @@
 require_relative './book'
-require_relative './success.rb'
+require_relative './success'
 
 class BookMain
   # State Helpers
@@ -29,5 +29,4 @@ class BookMain
     @book_arr.map { |book| puts "Title: \"#{book.title}\" Author: #{book.author}" }
     init
   end
-
 end
